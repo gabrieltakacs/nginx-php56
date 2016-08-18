@@ -22,6 +22,7 @@ RUN mkdir /composer \
 # php5-fpm configuration
 RUN adduser -s /sbin/nologin -D -G www-data www-data
 COPY php5/php-fpm.conf /etc/php5/php-fpm.conf
+COPY php5/php.ini /etc/php5/php.ini
 
 # Configure xdebug
 #RUN echo 'zend_extension="/usr/lib/php7/modules/xdebug.so"' >> /etc/php7/php.ini \
