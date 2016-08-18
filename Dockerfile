@@ -34,7 +34,7 @@ ENV COMPOSER_HOME=/composer
 RUN mkdir /composer \
     && curl -sS https://getcomposer.org/installer | php \
     && mkdir -p /opt/composer \
-    && mv composer.phar /opt/composer/composer.phar
+    && mv composer.phar /usr/local/bin/composer
 
 # php5-fpm configuration
 RUN adduser -s /sbin/nologin -D -G www-data www-data
