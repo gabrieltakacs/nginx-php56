@@ -8,9 +8,22 @@ RUN apk add nginx supervisor
 RUN apk --no-cache --update --repository=http://dl-4.alpinelinux.org/alpine/edge/testing add \
     php5 \
     php5-fpm \
+    php5-xml \
+    php5-pgsql \
+    php5-mysqli \
+    php5-pdo_mysql \
+    php5-mcrypt \
+    php5-opcache \
+    php5-gd \
+    php5-curl \
     php5-json \
     php5-phar \
-    php5-openssl
+    php5-openssl \
+    php5-ctype \
+    php5-mbstring \
+    php5-zip \
+    php5-dev \
+    php5-xdebug
 
 # Install composer
 ENV COMPOSER_HOME=/composer
