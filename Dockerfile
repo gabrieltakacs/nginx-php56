@@ -22,10 +22,11 @@ RUN apk --no-cache --update --repository=http://dl-4.alpinelinux.org/alpine/edge
     php5-ctype \
     php5-zip \
     php5-dev \
-    php5-xdebug \
     php5-iconv \
     php5-soap \
     php5-zlib \
+    php5-dom \
+    php5-bcmath \
     php5-memcache \
     php5-memcached \
     memcached
